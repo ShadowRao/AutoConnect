@@ -5,12 +5,12 @@ import time
 import schedule
 
 #Credentials
-username = ""
-password = ""
+username = ""  #Enter gmail address
+password = ""  #Enter password 
 
 def Autoconnect():
     # Import the firefox Webdriver, with the pre-configured option
-    driver = webdriver.Firefox(executable_path="Enter path to geckodriver.exe here")
+    driver = webdriver.Firefox(executable_path="") #Enter path to geckodriver.exe here
 
     # Sign In and username
     driver.get("https://www.google.com")
@@ -31,7 +31,7 @@ def Autoconnect():
     Next2 =driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button").click()
 
     #Go to meet
-    driver.get("https://meet.google.com/sxw-mojp-ptz")
+    driver.get("") #Add google meet link here
     time.sleep(5)
     
     #Switch Off Cam
